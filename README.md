@@ -1,10 +1,51 @@
 
+# Delivery Backend 
+
+Congratulations on downloading your project! This readme will guide you through the steps to start your project successfully.
+
+## Prerequisites
+Before starting the project, ensure that you have the following prerequisites installed on your system:
+
+- **Node.js** (version 12 or above)
+- **npm** (usually comes with Node.js)
+
+
+## Installation
+
+To install the project dependencies, navigate to the project directory in your terminal or command prompt and run the following command:
+
+```bash
+ npm install
+```
+
+This will install all the required dependencies specified in the project's **package.json** file.
+    
+## Configuration
+
+Before starting the project, you might need to configure some settings based on your specific environment. Typically, these configurations can be found in a file called **.env** or a similar configuration file. Make sure to check if such a file exists in your project directory.
+
+If there is an **.env** file, open it and update any necessary configuration variables according to your needs. If the file doesn't exist, you may need to create one. 
+
+Example **.env**:
+```.env 
+PORT= 4080
+HOST_URI=mongodb://username:password@hostname:port/database_name
+```
+## Starting the project
+
+Once you have installed the project dependencies and configured the necessary settings, you can start the project by running the following command:
+
+```bash 
+npm start 
+```
+
+This command will start the project and launch the necessary server. You should see console output indicating that the server is running and listening for incoming requests.
 ## Routes
  This backend provides two routes: `/products` and `/orders`. Both routes support the `GET` and `POST` methods to retrieve and add data respectively. This readme will guide you through the usage of these routes.
 
 ## Base URL
 
-The base URL for accessing the Shop Backend is `https://localhost:4080`. Please replace `localhost:4080.com` with the actual URL where the backend is deployed.
+The base URL for accessing the Shop Backend is `https://localhost:4080`. Please replace `localhost:4080` with the actual URL where the backend is deployed.
 
 ## Products
 
@@ -141,3 +182,4 @@ The base URL for accessing the Shop Backend is `https://localhost:4080`. Please 
 In case of any errors, the backend will return appropriate HTTP status codes along with error messages in the response body. Please refer to the HTTP status codes and error messages to handle potential issues gracefully.
 
 That's all you need to know to get started with the Delivery Backend! Happy shopping!
+
